@@ -11,7 +11,14 @@ if saque <= saldo:
     saldo = saldo_final
 
 elif saque <= saldo + limite:
-    opcao = int(input("Saldo insuficiente, deseja utilizar seu limite? \n [1] Sim \n [2] Não \n: "))
+    #Usando as aspas triplas para criar um menu mais fácil
+    opcao = int(input("""
+    
+    Saldo insuficiente, deseja utilizar seu limite?
+    
+    [1] Sim
+    [2] Não
+    """))
     
     if opcao == 1:
         saldo_final = saldo - saque
